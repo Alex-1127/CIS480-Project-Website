@@ -1,0 +1,48 @@
+/* THE CODE UNDERNEATH IS COPY AND PASTED FROM PREVIOUSLY USED CODE FOR ANOTHER PROJECT, HAVE TO LOOK THROUGH */
+
+/* Navigational bar containing different contents */
+.navbar{
+    width:100%;    
+    background-color: rgba(0, 0, 0, .6);
+    padding:15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+} 
+
+/* No explanation */
+.logo{
+    width: 220px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+/* Navbar sub-catagories */
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+}
+
+
+.navbar il li:hover:after{
+    width: 100%;
+}
