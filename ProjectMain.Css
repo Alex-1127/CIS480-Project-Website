@@ -33,17 +33,22 @@
     text-transform: uppercase;
     text-shadow: 3px 3px 3px black;
     font-family: Work Sans, serif;
+    
 }
 
-.navbar button{
-  padding: 1.5%;
-  font-family: Work Sans, serif;
+.navbtn{
+  padding: 1.3%;
   font-size: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 50px;
+  margin-left: 10px;
   text-decoration: none;
-  color: #90e200;
-  
+  background-color: #90e200;
+  color: #000;
+  font-family: Work Sans, serif;
+  font-weight: bold;
+  text-align: center;
+
+
 }
 /* END OF NAVBAR ELEMENT */
 
@@ -82,8 +87,10 @@ body{
 
 .titlebox h1{
   font-size: 60px;
-  font-weight: 400;
-  text-decoration: none;
+  font-weight: 400 bold;
+  text-decoration: none; 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
 
 .titlebox h2{
@@ -91,6 +98,8 @@ body{
   font-size: 30px;
   line-height: 180%;
   text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
 
 
@@ -119,6 +128,8 @@ body{
     letter-spacing:2px;
     font-family: Work Sans, serif;
     margin-left: 3%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
   }
   .site-footer a{          /* Copyright link color*/
     color:#b4b4b4;
@@ -139,11 +150,15 @@ body{
     text-decoration: none;
     margin-left: 4%;
     font-family: Work Sans, serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
   }
   .footer-links a:active,.footer-links a:focus,.footer-links a:hover{     /* Hover Color */
     color:#90e200;
     text-decoration:none;
     font-family: Work Sans, serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
   }
 
   .site-footer .social-icons a{
@@ -175,8 +190,9 @@ body{
   .logo{              /* Keep the same */
     display: none;
   }
-  .navbar button{     /* Keep the same */
-    display: none;
+  .navbtn{     /* Keep the same */
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .navbar{            /* Keep the same */
     padding: 5px 0;
@@ -187,17 +203,181 @@ body{
     display: block; 
     padding: 10px;
   }
-  body {                  /* Can delete if needed */
-    overflow-y: hidden;
-  }
   .titlebox h1{           /* Can delete/alter if needed */
     font-size: 30px;
   }
   .titlebox h2{           /* Can delete/alter if needed */
     font-size: 20px;
   }
+  .container{
+    overflow-y: none;
+  }
 }
 
 /* ALEX MURRAY CSS SECTION */
+
+/* ALEX KEIDROWSKI */
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.container3 h1{
+  font-family: Work Sans, serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 50px;
+  margin: 5%;
+  color: white;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+/* AIDAN FREISCHLAG CSS SECTION */
+
+.ReviewPageTitle h1 {
+  text-align: center;
+  color: #7811b3;
+  font-family: Work Sans, serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+.review-section {
+  background-color: #f3e6ff; /* Light purple background */
+  border: 2px solid #7811b3;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: Work Sans, serif;
+
+}
+
+.form-section {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Work Sans, serif;
+}
+
+.example-review {
+  font-style: italic;
+  margin-top: 10px;
+  color: #333;
+  font-family: Work Sans, serif;
+}
+
+.container2{
+  height: 110vh;
+
+}
+
+
+
+/* NIK GUTIERREZ CSS SECTION */
+.desc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  
+}
+.image{
+  flex: 1;
+  min-width: 300px;
+  max-width: 700px;
+  padding: 20px;
+}
+.image img {
+  width: 150%;
+  height: auto;
+  border-radius: 20px;
+}
+.paragraph {
+  flex: 1;
+  min-width: 300px;
+  max-width: auto;
+  padding: 20%;
+}
+.paragraph h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 40%;
+  font-family: Work Sans, serif;
+}
+.paragraph p {
+  height: auto;
+  width: 150%;
+  font-size: 20px;
+  line-height: 1.1;
+  padding-left: 20%;
+  border: 4px solid black;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: Work Sans, serif;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .image{
+    min-width: 120px;
+  }
+
+  .paragraph{
+    min-width: 150px;
+    flex: shrink;
+
+  }
+
+}
 
 
